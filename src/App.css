@@ -1,0 +1,104 @@
+
+
+.App {
+  text-align: center;
+  margin-top: 3.125rem;
+}
+p{
+  font-weight:bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+video {
+  width: 25rem;
+  height: 25rem;
+  
+  display: block;
+}
+
+.video-container {
+  
+  max-width: 40rem;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.controls {
+  margin-top: 1.25rem;
+}
+
+.controls button,
+.zoom-controls button,
+.aspect-ratio-controls button,
+.delete-button {
+  margin: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover,
+.zoom-controls button:hover,
+.aspect-ratio-controls button:hover,
+.delete-button:hover {
+  background-color: #0056b3;
+}
+
+.zoom-controls button,
+.aspect-ratio-controls button,
+.delete-button {
+  margin-top: 0.625rem;
+}
+
+.aspect-ratio-controls button:last-child,
+.delete-button {
+  margin-right: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.image-container {
+  margin: 0.625rem;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  top: -2.125rem;
+  right: 0.3125rem;
+  margin: 0.5rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px; 
+  height: auto;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.4); 
+  z-index: 1;
+}
+
+
